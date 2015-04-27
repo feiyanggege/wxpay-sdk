@@ -204,3 +204,15 @@ For questions with weixin-pay, ask your search engineer. Or refer to [http://mp.
 For javadoc, run `ant javadoc`(recommended), or visit [http://cuter44.github.io/wxpay-sdk/javadoc/](http://cuter44.github.io/wxpay-sdk/javadoc/0.2.0/) (recent version may be available, you can just take a try).  
 For bugs/issues, thanks for submitting on [https://github.com/cuter44/wxpay-sdk/issues](https://github.com/cuter44/wxpay-sdk/issues)  
 Gitter powered: [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cuter44/wxpay-sdk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+补充：
+1、作为一个刚接触后台的小小菜鸟，很荣幸可以引用师兄框架。不仅方便，而且运用容易。
+
+2、我用的是myeclipse，从git@osc上拉代码下来，然后将wxpay-sdk的jar包拉入lib目录内，右键添加到类库中。
+
+3、首先我说下这个jar包对我的用处吧：
+    一：将微信支付的复杂参数进行包装，也拼好了url的引用，解决了微信支付后台请求微信服务器的基本问题。
+    二：将前端需要的JSSDKConfig的所谓APPID,timestamp,nonceStr等配置数据的生成与获取也包装好了，直接继承或者在web.xml内添加即可使用。
+    三：封装好了订单回调函数WxpayNotifyGatewayServlet，直接继承重写public boolean handle(Notify n)方法即可。
+
+由于师兄框架内容丰富，一时半会未能全部运用自如，有时间我会再研究完善说明，今天先大概写一点，以免写多错多。
